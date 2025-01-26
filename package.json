@@ -2,7 +2,7 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "build": "bunx --bun vite build",
+        "build": "bunx --bun vite build && bunx --bun vite build --ssr",
         "dev": "bunx --bun vite"
     },
     "devDependencies": {
@@ -20,6 +20,8 @@
     },
     "dependencies": {
         "@inertiajs/react": "^2.0.3",
+        "flowbite-react": "^0.10.2",
+        "lucide-react": "^0.474.0",
         "react": "^19.0.0",
         "react-dom": "^19.0.0"
     }

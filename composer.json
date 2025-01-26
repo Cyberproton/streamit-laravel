@@ -54,6 +54,10 @@
         "dev": [
             "Composer\\Config::disableProcessTimeout",
             "bunx --bun concurrently -c \"#93c5fd,#c4b5fd,#fdba74\" \"php artisan serve\" \"php artisan queue:listen --tries=1\" \"bun run dev\" --names=server,queue,vite"
+        ],
+        "dev-ssr": [
+            "Composer\\Config::disableProcessTimeout",
+            "bunx --bun concurrently -c \"#93c5fd,#c4b5fd,#00c95f,#fdba74\" \"php artisan serve\" \"php artisan queue:listen --tries=1\" \"php artisan inertia:start-ssr\" \"bun run dev\" --names=server,queue,ssr-server,vite"
         ]
     },
     "extra": {
